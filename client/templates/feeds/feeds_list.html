@@ -1,0 +1,28 @@
+<template name="feedsList">
+   
+  
+ <div class="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <div class="container">
+    {{#if post}}
+    <div class="article">
+      <span class="title">{{post.title}}</span>
+      <br />
+      <div id="article-content">
+      {{{post.content}}}
+      </div>
+      <p>This article was first published at
+        <a  target="_blank" href="{{post.url}}">{{post.provider_name}}</a>
+      </p>
+    </div>
+    <footer>
+    <h4 style="text-align:center;">Built with <span style="color:red;">&#10084;</span> by <a href="http://rajaselvan.in" target="_blank">Rajaselvan</a>
+    </h4>
+    </footer>
+    {{else}}
+  <div id="spin" class="spinner"></div>  
+  {{/if}}
+  
+  </div>
+  </template>
