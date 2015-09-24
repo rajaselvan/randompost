@@ -1,11 +1,12 @@
 <template name="feedsList">
    
   
- <div class="progress-container">
-    <div id="progress-bar"></div>
-  </div>
+ 
   <div class="container">
     {{#if post}}
+    <div class="progress-container">
+    <div id="progress-bar"></div>
+  </div>
     <div class="article">
       <span class="title">{{post.title}}</span>
       <br />
@@ -26,7 +27,13 @@
     </h4>
     </footer>
     {{else}}
-  <div id="spin" class="spinner"></div>  
+  <div class='loader'>
+  <div class='loader-text'>
+    Fetching an article from the web...
+  </div>
+  <span class='loader-bracket'>[</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-increment'>&nbsp;</span><span class='loader-bracket'>]</span>
+  <span class='loader-percent'>000.0%</span>
+</div> 
   {{/if}}
   
   </div>

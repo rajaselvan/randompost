@@ -124,3 +124,13 @@ a{
 img[src*=".gif"] {
     display: none;
 }
+
+
+.loader {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.loader-increment {
+  color: #00b200;
+}

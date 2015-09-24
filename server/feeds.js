@@ -41,7 +41,7 @@ Meteor.methods({
         var text = random_record['link'];
         var urlEnd = text.indexOf("?src");
         var url = text.slice(0, urlEnd).trim();
-        console.log(url);
+        
         var extractBase = 'http://api.embed.ly/1/extract';
         var embedlyKey = "b76406e41af040dc8536e0653a90c15a";
         try{
