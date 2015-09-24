@@ -12,13 +12,14 @@
       <div id="article-content">
       {{#if post.content}}
       {{{post.content}}}
-      {{else}}
-      <h2 style="text-align:center; padding-top:20%;">Oops. Refresh for a new article!</h2>
-      {{/if}}
-      </div>
-      <p>This article was first published at
+       <p>This article was first published at
         <a  target="_blank" href="{{post.url}}">{{post.provider_name}}</a>
       </p>
+      {{else}}
+      <h2 style="text-align:center; padding-top:10%;">Oops. Refresh for a new article!</h2>
+      {{/if}}
+      </div>
+     
     </div>
     <footer>
     <h4 style="text-align:center;">Built with <span style="color:red;">&#10084;</span> by <a href="http://rajaselvan.in" target="_blank">Rajaselvan</a>
