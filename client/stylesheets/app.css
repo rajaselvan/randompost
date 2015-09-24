@@ -112,3 +112,7 @@ body{
 a{
   text-decoration: none;
 }
+
+img[src*=".gif"] {
+    display: none;
+}

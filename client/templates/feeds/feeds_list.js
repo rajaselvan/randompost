@@ -1,7 +1,7 @@
 Template.feedsList.onRendered(function(){
   
    
-  setTimeout(loader,15000);
+  setTimeout(loader,17000);
   
 });
 
