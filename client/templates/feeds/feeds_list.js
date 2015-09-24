@@ -1,7 +1,7 @@
 Template.feedsList.onRendered(function(){
   
    
-  setTimeout(loader,3000);
+  setTimeout(loader,15000);
   
 });
 
@@ -22,6 +22,7 @@ Template.feedsList.created = function () {
 Template.feedsList.helpers({
   post: function () {
     var item=Session.get("content");
+    console.log(item.content);
     return {
       title: item.title,
       content: item.content,
