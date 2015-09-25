@@ -99,7 +99,19 @@ Template.feedsList.helpers({
   }
 });
 
-
+Template.feedsList.events({
+    'load .article img': function(e) {
+       if(e.currentTarget.naturalWidth < 275 || e.currentTarget.naturalHeight < 275 ){
+         e.preventDefault();
+         e.currentTarget.remove();
+       }
+    },
+    
+    'error .article img': function(e){
+      e.preventDefault();
+      e.target.remove();
+    }
+});
 
 
 function loader() {
