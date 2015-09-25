@@ -134,3 +134,8 @@ img[src*=".gif"] {
 .loader-increment {
   color: #00b200;
 }
+
+video{
+display: block;
+margin: 0 auto;
+}
