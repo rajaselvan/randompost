@@ -4,6 +4,7 @@ Feed_Entries = new Meteor.Collection("feed_entries");
 
 
 Meteor.methods({
+    
     'fetchRandomRecord': function () {
          
         var N = Feed_Entries.find({}).count();
@@ -19,6 +20,7 @@ Meteor.methods({
         var urlEnd = text.indexOf(">Full Story");
         var url = text.slice(urlStart, urlEnd - 1).trim();
         
+        /*
         var extractBase = 'http://api.embed.ly/1/extract';
         var embedlyKey = "b76406e41af040dc8536e0653a90c15a";
         try {
@@ -33,15 +35,20 @@ Meteor.methods({
         return result.data;
         } catch(e) {
           console.log('No article found! ' + e);
-        }
+        }*/
+        
+        
+        return url;
 
 
        }
       else if (random_record.feed_id === '2') {
+          
         var text = random_record['link'];
         var urlEnd = text.indexOf("?src");
         var url = text.slice(0, urlEnd).trim();
         
+        /*
         var extractBase = 'http://api.embed.ly/1/extract';
         var embedlyKey = "b76406e41af040dc8536e0653a90c15a";
         try{
@@ -56,7 +63,11 @@ Meteor.methods({
         return result.data;
         } catch(e) {
           console.log('No article found! ' + e);
-        }
+        }*/
+        
+        
+        
+        return url;
       }
  }
 });
