@@ -29,7 +29,7 @@ Template.feedsList.onRendered(function () {
               return _this.$percent.text('100.0%');
             }
           };
-        })(this), 6);
+        })(this), 17);
       };
 
       Loader.prototype._update_display = function () {
